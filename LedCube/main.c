@@ -133,7 +133,7 @@ void SetCube0() {
     }
 }
 
-void* PrintThread(void* argument) {
+void* PrintThread() {
     while (1) {
         printf("\033[%d;%dH", 0, 0);
         int i, j, k;
@@ -163,8 +163,8 @@ void* PrintThread(void* argument) {
 
 }
 
-void ShowCube() {
-/*    int i, j, k;
+/*void ShowCube() {
+    int i, j, k;
     for (i = 0; i < LEDCUBESIDE; i++) {
         digitalWrite(rgLayerID[i], LOW);
         for (j = 0; j < LEDCUBESIDE; j++) {
@@ -189,8 +189,8 @@ void* ShowThread() {
             delay(5);
             all0();
         }
-    }*/
-}
+    }
+}*/
 
 void Rotate45left(){
     int ar[3];
@@ -272,8 +272,8 @@ void Rotate45right(){
     }
 }
 
-void clear() {
-/*
+/*void clear() {
+
     if (wiringPiSetup() == -1) return 1;
     pinMode(LAYER0, OUTPUT);
     pinMode(LAYER1, OUTPUT);
@@ -333,5 +333,5 @@ void all0() {
     digitalWrite(PILLAR7, HIGH);
     digitalWrite(PILLAR8, HIGH);
     digitalWrite(PILLAR9, HIGH);
-*/
-}
+
+}*/
