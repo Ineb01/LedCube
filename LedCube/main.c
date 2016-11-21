@@ -73,9 +73,9 @@ int main(int argc, char** argv) {
     if(fp == NULL){
         printf("fail\n");
     }else{
-        while((temp = fgetc(fp))!=EOF) {
+        do{
 		printf("%c ", temp);
-	}
+	}while((temp = fgetc(fp))!=EOF);
 	fclose(fp);
     }
     
