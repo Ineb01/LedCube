@@ -63,19 +63,32 @@ int main(int argc, char** argv) {
     pthread_t threads[ 1 ];
     int thread_args[ 1 ];
     int result_code;
+    FILE *fp;
+    int temp;
     
     //clear();
+    printf("\e[?25l");
+    fp = fopen("Pattern.txt", "r");
+    
+    if(fp == NULL){
+        printf("fail\n");
+    }else{
+        while((temp = fgetc(fp))!=EOF) {
+		printf("%c ", temp);
+	}
+	fclose(fp);
+    }
     
     printf("\e[?25l");
     
-    thread_args[ 0 ] = 0;
+    /*thread_args[ 0 ] = 0;
     result_code = pthread_create(threads, NULL, PrintThread, thread_args);
     
     while(1){
         SetCube0();
         RandomCube(50);
         sleep(1);
-    }
+    }*/
     return (EXIT_SUCCESS);
 }
 
