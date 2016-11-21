@@ -64,7 +64,7 @@ int main(int argc, char** argv) {
     int thread_args[ 1 ];
     int result_code;
     
-    clear();
+    //clear();
     
     printf("\e[?25l");
     
