@@ -1,19 +1,18 @@
-/*--------------------------------------------------------
- *      Hoehere Technische Bundeslehranstalt STEYR
- *  Fachrichtung Elektronik und Technische Informatik
- *------------------------------------------------------*/
+/*----------------------------------------------------------------------
+ *            Hoehere Technische Bundeslehranstalt STEYR
+ *         Fachrichtung Elektronik und Technische Informatik
+ *---------------------------------------------------------------------*/
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   main.c
- * Author: bbachmay
- *
- * Created on 09. November 2016, 10:46
+/**
+ * Kurzbeschreibung
+ *  
+ * @author  : Bachmayr, Faller
+ *            2BHEL
+ * @date    : 21. November 2016
+ * File     : main.c
+ * 
+ * @details
+ *   
  */
 
 #include <stdio.h>

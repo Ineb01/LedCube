@@ -6,7 +6,7 @@
 /**
  * Kurzbeschreibung
  *  
- * @author  : Maximilian Faller
+ * @author  : Bachmayr, Faller
  *            2BHEL
  * @date    : 21. November 2016
  * File     : main.c
@@ -14,6 +14,7 @@
  * @details
  *   
  */
+
 #ifndef DEFINE_H
 #define	DEFINE_H
 
