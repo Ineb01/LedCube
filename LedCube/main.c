@@ -193,7 +193,7 @@ void* ShowThread() {
 }
 
 void Rotate45left() {
-    int ar[3];
+    int ar[LEDCUBESIDE];
     int i, j = 0, k = 0;
 
     for (i = 0; i < LEDCUBESIDE; i++) {
@@ -233,7 +233,7 @@ void Rotate45left() {
 }
 
 void Rotate45right() {
-    int ar[3];
+    int ar[LEDCUBESIDE];
     int i, j = 0, k = 0;
 
     for (i = 0; i < LEDCUBESIDE; i++) {
