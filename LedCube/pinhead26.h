@@ -9,20 +9,26 @@
  * @author  : Bachmayr, Faller
  *            2BHEL
  * @date    : 21. November 2016
- * File     : main.c
+ * File     : pinhead26.h
  * 
  * @details
  *   
  */
 
-#ifndef DEFINE_H
-#define	DEFINE_H
+#ifndef PINHEAD26_H
+#define	PINHEAD26_H
 
 #ifdef	__cplusplus
 extern "C" {
 #endif
 
+    
+#define HIGH 1
+#define LOW 0
 #define LEDCUBESIDE 3
+
+#define TASTE1 1
+    
 #define LAYER0 6
 #define LAYER1 4
 #define LAYER2 5
@@ -36,15 +42,11 @@ extern "C" {
 #define PILLAR7 14
 #define PILLAR8 3
 #define PILLAR9 7
-
-#define HIGH 1
-#define LOW 0
-
-#define TASTE1  1
-
+    
+    
 #ifdef	__cplusplus
 }
 #endif
 
-#endif	/* DEFINE_H */
+#endif	/* PINHEAD26_H */
 

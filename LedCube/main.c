@@ -19,25 +19,20 @@
 #include <stdlib.h>
 #include <time.h>
 #include <pthread.h>
+
+#include "general.h"
+
+#ifdef PINHEAD40 
+#include "pinhead40.h"
+#include "ledcube.h"
 #include <wiringPi.h>
+#endif
 
-#include "define.h"
-
-
-void PrintCube();
-void* PrintThread();
-void RandomCube(int probability);
-void RandomLed();
-void SetCube0();
-void ShowCube();
-void* ShowThread();
-void Rotate45left();
-void Rotate45right();
-
-void clear();
-void all();
-void all0();
-
+#ifdef PINHEAD26 
+#include "pinhead26.h"
+#include "ledcube.h"
+#include <wiringPi.h>
+#endif
 
 int rgLedCube[LEDCUBESIDE][LEDCUBESIDE][LEDCUBESIDE];
 
@@ -49,7 +44,8 @@ int rgPillarID[LEDCUBESIDE][LEDCUBESIDE] = {PILLAR1, PILLAR2, PILLAR3,
 int main(int argc, char** argv) {
 
     srand(time(NULL));
-
+    if(wiringPiSetup() == -1) return 1;
+    
     pthread_t threads[ 1 ];
     int thread_args[ 1 ];
     int result_code;
@@ -72,11 +68,13 @@ int main(int argc, char** argv) {
 
     thread_args[ 0 ] = 0;
     result_code = pthread_create(threads, NULL, ShowThread, thread_args);
-
+    
+    
     while (1) {
         sleep(1);
-        Rotate45right();
+        Rotate45left();
     }
+    
     return (EXIT_SUCCESS);
 }
 
@@ -273,7 +271,6 @@ void Rotate45right() {
 }
 
 void clear() {
-    if (wiringPiSetup() == -1) return 1;
     int i, j, k;
 
     for (j = 0; j < LEDCUBESIDE; j++) {
@@ -283,8 +280,8 @@ void clear() {
         }
     }
     for (i = 0; i < LEDCUBESIDE; i++) {
-            pinMode(rgLayerID[i], OUTPUT);
-            digitalWrite(rgLayerID[i], LOW);
+        pinMode(rgLayerID[i], OUTPUT);
+        digitalWrite(rgLayerID[i], LOW);
     }
     pinMode(TASTE1, INPUT);
 }
@@ -298,7 +295,7 @@ void all() {
         }
     }
     for (i = 0; i < LEDCUBESIDE; i++) {
-            digitalWrite(rgLayerID[i], LOW);
+        digitalWrite(rgLayerID[i], LOW);
     }
 }
 
@@ -311,6 +308,6 @@ void all0() {
         }
     }
     for (i = 0; i < LEDCUBESIDE; i++) {
-            digitalWrite(rgLayerID[i], HIGH);
+        digitalWrite(rgLayerID[i], HIGH);
     }
 }

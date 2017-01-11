@@ -1,3 +1,3 @@
-build/Debug/Cygwin-Windows/main.o: main.c define.h
+build/Debug/Cygwin-Windows/main.o: main.c PINHEAD26.h
 
-define.h:
+PINHEAD26.h:

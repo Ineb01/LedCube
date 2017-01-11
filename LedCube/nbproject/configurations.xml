@@ -4,7 +4,11 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>define.h</itemPath>
+      <itemPath>console.h</itemPath>
+      <itemPath>general.h</itemPath>
+      <itemPath>ledcube.h</itemPath>
+      <itemPath>pinhead26.h</itemPath>
+      <itemPath>pinhead40.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -31,21 +35,28 @@
   <confs>
     <conf name="Debug" type="1">
       <toolsSet>
-        <compilerSet>GNU|GNU</compilerSet>
+        <compilerSet>default</compilerSet>
         <dependencyChecking>true</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
         <linkerTool>
           <linkerLibItems>
-            <linkerOptionItem>-lwiringPi</linkerOptionItem>
             <linkerOptionItem>-lpthread</linkerOptionItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="define.h" ex="false" tool="3" flavor2="0">
+      <item path="console.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="general.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ledcube.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="pinhead26.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="pinhead40.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -68,9 +79,81 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="define.h" ex="false" tool="3" flavor2="0">
+      <item path="console.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="general.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ledcube.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="pinhead26.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="pinhead40.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Pinhead40" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <preprocessorList>
+            <Elem>PINHEAD40</Elem>
+          </preprocessorList>
+        </cTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-lpthread</linkerOptionItem>
+            <linkerOptionItem>-lwiringPi</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="console.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="general.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ledcube.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="9">
+      </item>
+      <item path="pinhead26.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="pinhead40.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Pinhead26" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <preprocessorList>
+            <Elem>PINHEAD26</Elem>
+          </preprocessorList>
+        </cTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-lpthread</linkerOptionItem>
+            <linkerOptionItem>-lwiringPi</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="console.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="general.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ledcube.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="9">
+      </item>
+      <item path="pinhead26.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="pinhead40.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

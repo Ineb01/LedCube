@@ -19,6 +19,14 @@
                     <name>Release</name>
                     <type>1</type>
                 </confElem>
+                <confElem>
+                    <name>Pinhead40</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>Pinhead26</name>
+                    <type>1</type>
+                </confElem>
             </confList>
             <formatting>
                 <project-formatting-style>false</project-formatting-style>

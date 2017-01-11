@@ -5,3 +5,5 @@
 #
 # Debug configuration
 # Release configuration
+# Pinhead40 configuration
+# Pinhead26 configuration
