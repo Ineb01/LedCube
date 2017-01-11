@@ -8,7 +8,7 @@
  *  
  * @author  : Maximilian Faller
  *            2BHEL
- * @date    : %<%DATE%>%
+ * @date    : 11. Jänner 2017
  * File     : main.c
  * 
  * @details
@@ -31,4 +31,4 @@ void* PrintThread();
 }
 #endif
 
-#endif /* %<%GUARD_NAME%>% */
+#endif /* CONSOLE_H */

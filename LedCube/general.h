@@ -8,7 +8,7 @@
  *  
  * @author  : Maximilian Faller
  *            2BHEL
- * @date    : %<%DATE%>%
+ * @date    : 11. Jänner 2017
  * File     : main.c
  * 
  * @details
@@ -33,4 +33,4 @@ void Rotate45right();
 }
 #endif
 
-#endif /* %<%GUARD_NAME%>% */
+#endif /* GENERAL_H */

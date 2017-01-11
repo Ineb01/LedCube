@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-Linux
-CND_DLIB_EXT=so
+CND_PLATFORM=GNU-Windows
+CND_DLIB_EXT=dll
 CND_CONF=Pinhead40
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -35,6 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/console.o \
+	${OBJECTDIR}/general.o \
+	${OBJECTDIR}/ledcube.o \
 	${OBJECTDIR}/main.o
 
 
@@ -56,11 +59,26 @@ LDLIBSOPTIONS=-lpthread -lwiringPi
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ledcube
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ledcube.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ledcube: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ledcube.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ledcube ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/console.o: console.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -DPINHEAD40 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/console.o console.c
+
+${OBJECTDIR}/general.o: general.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -DPINHEAD40 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/general.o general.c
+
+${OBJECTDIR}/ledcube.o: ledcube.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -DPINHEAD40 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ledcube.o ledcube.c
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}

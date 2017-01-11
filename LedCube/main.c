@@ -22,12 +22,12 @@
 
 #include "general.h"
 
-#ifdef PINHEAD40 
+#ifdef PINHEAD40
 #include "pinhead40.h"
 #include "ledcube.h"
 #endif
 
-#ifdef PINHEAD26 
+#ifdef PINHEAD26
 #include "pinhead26.h"
 #include "ledcube.h"
 #endif
@@ -36,13 +36,7 @@
 #include "console.h"
 #endif
 
-#ifdef PINHEAD40
-int rgLayerID[LEDCUBESIDE] = {LAYER0, LAYER1, LAYER2};
-int rgPillarID[LEDCUBESIDE][LEDCUBESIDE] = {PILLAR1, PILLAR2, PILLAR3,
-                                            PILLAR4, PILLAR5, PILLAR6,
-                                            PILLAR7, PILLAR8, PILLAR9};
-#endif
-#ifdef PINHEAD26
+#ifdef LEDCUBE_H
 int rgLayerID[LEDCUBESIDE] = {LAYER0, LAYER1, LAYER2};
 int rgPillarID[LEDCUBESIDE][LEDCUBESIDE] = {PILLAR1, PILLAR2, PILLAR3,
                                             PILLAR4, PILLAR5, PILLAR6,
