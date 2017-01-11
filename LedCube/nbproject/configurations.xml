@@ -17,6 +17,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>console.c</itemPath>
+      <itemPath>general.c</itemPath>
+      <itemPath>ledcube.c</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -40,15 +43,26 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <cTool>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
+        </cTool>
         <linkerTool>
           <linkerLibItems>
             <linkerOptionItem>-lpthread</linkerOptionItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="console.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="console.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="general.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="general.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ledcube.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="ledcube.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -79,9 +93,15 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="console.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="console.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="general.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="general.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ledcube.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="ledcube.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -111,9 +131,15 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="console.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="console.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="general.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="general.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ledcube.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="ledcube.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -143,9 +169,15 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="console.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="console.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="general.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="general.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ledcube.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="ledcube.h" ex="false" tool="3" flavor2="0">
       </item>

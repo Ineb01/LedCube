@@ -22,6 +22,7 @@
 extern "C" {
 #endif
 
+#define THREAD ShowThread
     
 #define HIGH 1
 #define LOW 0
@@ -49,4 +50,3 @@ extern "C" {
 #endif
 
 #endif	/* PINHEAD26_H */
-

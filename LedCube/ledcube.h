@@ -14,8 +14,8 @@
  * @details
  *   
  */
-#ifndef %<%GUARD_NAME%>%
-#define %<%GUARD_NAME%>%
+#ifndef LEDCUBE_H
+#define LEDCUBE_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -24,9 +24,9 @@ extern "C" {
 
 void ShowCube();
 void* ShowThread();
-void clear();
-void all();
-void all0();
+void Setup();
+void All();
+void All0();
 
 
 #ifdef __cplusplus
@@ -34,4 +34,3 @@ void all0();
 #endif
 
 #endif /* %<%GUARD_NAME%>% */
-

@@ -14,8 +14,8 @@
  * @details
  *   
  */
-#ifndef %<%GUARD_NAME%>%
-#define %<%GUARD_NAME%>%
+#ifndef GENERAL_H
+#define GENERAL_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -23,8 +23,6 @@ extern "C" {
 
     
 void SetCube0();
-void PrintCube();
-void* PrintThread();
 void RandomCube(int probability);
 void RandomLed();
 void Rotate45left();
@@ -36,4 +34,3 @@ void Rotate45right();
 #endif
 
 #endif /* %<%GUARD_NAME%>% */
-
