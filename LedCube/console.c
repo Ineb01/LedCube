@@ -1,8 +1,18 @@
-/* 
- * File:   console.c
- * Author: Benjamin Bachmayr
- *
- * Created on 11. Jänner 2017, 21:56
+/*----------------------------------------------------------------------
+ *            Hoehere Technische Bundeslehranstalt STEYR
+ *         Fachrichtung Elektronik und Technische Informatik
+ *---------------------------------------------------------------------*/
+
+/**
+ * Kurzbeschreibung
+ *  
+ * @author  : Bachmayr, Faller
+ *            2BHEL
+ * @date    : 11. Jänner 2017
+ * File     : console.c
+ * 
+ * @details
+ *   
  */
 
 #include <stdio.h>

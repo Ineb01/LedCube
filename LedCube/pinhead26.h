@@ -8,7 +8,7 @@
  *  
  * @author  : Bachmayr, Faller
  *            2BHEL
- * @date    : 21. November 2016
+ * @date    : 11. Jänner 2017
  * File     : pinhead26.h
  * 
  * @details

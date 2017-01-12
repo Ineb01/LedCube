@@ -1,8 +1,18 @@
-/* 
- * File:   general.c
- * Author: Benjamin Bachmayr
- *
- * Created on 11. Jänner 2017, 22:07
+/*----------------------------------------------------------------------
+ *            Hoehere Technische Bundeslehranstalt STEYR
+ *         Fachrichtung Elektronik und Technische Informatik
+ *---------------------------------------------------------------------*/
+
+/**
+ * Kurzbeschreibung
+ *  
+ * @author  : Bachmayr, Faller
+ *            2BHEL
+ * @date    : 11. Jänner 2017
+ * File     : general.c
+ * 
+ * @details
+ *   
  */
 
 #include <stdio.h>
@@ -12,9 +22,11 @@
 #ifdef PINHEAD26 
 #include "pinhead26.h"
 #endif
+
 #ifdef PINHEAD40 
 #include "pinhead40.h"
 #endif
+
 #ifdef DEBUG
 #include "console.h"
 #endif
