@@ -9,7 +9,7 @@
  * @author  : Maximilian Faller
  *            2BHEL
  * @date    : 11. Jänner 2017
- * File     : main.c
+ * File     : general.h
  * 
  * @details
  *   
