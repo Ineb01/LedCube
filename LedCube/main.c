@@ -49,6 +49,7 @@ int main(int argc, char** argv) {
     
 #ifdef LEDCUBE_H
     Setup();
+    if(wiringPiSetup() == -1) return 1;
 #endif
     
     srand(time(NULL));
@@ -75,7 +76,7 @@ int main(int argc, char** argv) {
     
     while (1) {
         sleep(1);
-        Rotate45left();
+        RandomCube(50);
     }
     
     return (EXIT_SUCCESS);
