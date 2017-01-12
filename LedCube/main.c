@@ -75,7 +75,7 @@ int main(int argc, char** argv) {
     fclose(fp);
     
     while (1) {
-        sleep(1);
+        delay(600);
         RandomCube(50);
         //SetCube0;
     }
