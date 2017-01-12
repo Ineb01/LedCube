@@ -31,10 +31,8 @@
 #endif
 
 #ifdef LEDCUBE_H
-extern int rgLayerID[LEDCUBESIDE] = {LAYER0, LAYER1, LAYER2};
-extern int rgPillarID[LEDCUBESIDE][LEDCUBESIDE] = {PILLAR1, PILLAR2, PILLAR3,
-                                            PILLAR4, PILLAR5, PILLAR6,
-                                            PILLAR7, PILLAR8, PILLAR9};
+extern int rgLayerID[LEDCUBESIDE];
+extern int rgPillarID[LEDCUBESIDE][LEDCUBESIDE];
 #endif
 
 

@@ -29,19 +29,19 @@ extern "C" {
 
 #define TASTE1 -1
     
-#define LAYER0 0
+#define LAYER0 3
 #define LAYER1 2
-#define LAYER2 3
+#define LAYER2 0
 
-#define PILLAR1 24
-#define PILLAR2 21
-#define PILLAR3 14
-#define PILLAR4 25
+#define PILLAR1 14
+#define PILLAR2 13
+#define PILLAR3 12
+#define PILLAR4 21
 #define PILLAR5 23
-#define PILLAR6 13
-#define PILLAR7 29
-#define PILLAR8 22
-#define PILLAR9 12  
+#define PILLAR6 22
+#define PILLAR7 24
+#define PILLAR8 25
+#define PILLAR9 29  
     
     
 #ifdef __cplusplus

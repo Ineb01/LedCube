@@ -33,8 +33,20 @@
 
 extern int rgLedCube[LEDCUBESIDE][LEDCUBESIDE][LEDCUBESIDE];
 
+void SetCube0() {
+    int i, j, k;
+    for (i = 0; i < LEDCUBESIDE; i++) {
+        for (j = 0; j < LEDCUBESIDE; j++) {
+            for (k = 0; k < LEDCUBESIDE; k++) {
+                rgLedCube[i][j][k] = 0;
+            }
+        }
+    }
+}
+
 void RandomCube(int probability) {
     int i, j, k;
+    SetCube0();
     for (i = 0; i < LEDCUBESIDE; i++) {
         for (j = 0; j < LEDCUBESIDE; j++) {
             for (k = 0; k < LEDCUBESIDE; k++) {
@@ -46,17 +58,6 @@ void RandomCube(int probability) {
 
 void RandomLed() {
     rgLedCube[rand() % LEDCUBESIDE][rand() % LEDCUBESIDE][rand() % LEDCUBESIDE] = 1;
-}
-
-void SetCube0() {
-    int i, j, k;
-    for (i = 0; i < LEDCUBESIDE; i++) {
-        for (j = 0; j < LEDCUBESIDE; j++) {
-            for (k = 0; k < LEDCUBESIDE; k++) {
-                rgLedCube[i][j][k] = 0;
-            }
-        }
-    }
 }
 
 void Rotate45left() {
