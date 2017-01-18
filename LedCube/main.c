@@ -57,22 +57,25 @@ int main(int argc, char** argv) {
     pthread_t thread;
     pthread_create(&thread, NULL, THREAD, NULL);
     
-    FILE *fp;
+    FILE *fp = NULL;
     
     int i, j, k;
     
-    printf("\e[?25l");
-    fp = fopen("Pattern.txt", "r");
+    fp = fopen("Pattern.txt", "rt");
+    
+    if(fp != NULL){
+        printf("\e[?25l");
 
-    for (i = 0; i < LEDCUBESIDE; i++) {
-        for (j = 0; j < LEDCUBESIDE; j++) {
-            for (k = 0; k < LEDCUBESIDE; k++) {
-                fscanf(fp, "%d", &rgLedCube[i][j][k]);
+        for (i = 0; i < LEDCUBESIDE; i++) {
+            for (j = 0; j < LEDCUBESIDE; j++) {
+                for (k = 0; k < LEDCUBESIDE; k++) {
+                    fscanf(fp, "%d", &rgLedCube[i][j][k]);
+                }
             }
         }
-    }
 
-    fclose(fp);
+        fclose(fp);
+    }
     
     while (1) {
         delay(600);
