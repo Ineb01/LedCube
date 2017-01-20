@@ -18,15 +18,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#ifdef PINHEAD26
-#include <wiringPi.h>
-#include "pinhead26.h"
-#include "ledcube.h"
-#endif
-
 #ifdef PINHEAD40
 #include <wiringPi.h>
 #include "pinhead40.h"
+#include "ledcube.h"
+#endif
+
+#ifdef PINHEAD26
+#include <wiringPi.h>
+#include "pinhead26.h"
 #include "ledcube.h"
 #endif
 

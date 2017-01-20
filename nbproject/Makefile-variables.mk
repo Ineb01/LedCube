@@ -23,13 +23,13 @@ CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
 CND_PACKAGE_NAME_Release=ledcube.tar
 CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/ledcube.tar
 # Pinhead40 configuration
-CND_PLATFORM_Pinhead40=None-Linux
-CND_ARTIFACT_DIR_Pinhead40=dist/Pinhead40/None-Linux
+CND_PLATFORM_Pinhead40=GNU-Linux
+CND_ARTIFACT_DIR_Pinhead40=dist/Pinhead40/GNU-Linux
 CND_ARTIFACT_NAME_Pinhead40=ledcube
-CND_ARTIFACT_PATH_Pinhead40=dist/Pinhead40/None-Linux/ledcube
-CND_PACKAGE_DIR_Pinhead40=dist/Pinhead40/None-Linux/package
+CND_ARTIFACT_PATH_Pinhead40=dist/Pinhead40/GNU-Linux/ledcube
+CND_PACKAGE_DIR_Pinhead40=dist/Pinhead40/GNU-Linux/package
 CND_PACKAGE_NAME_Pinhead40=ledcube.tar
-CND_PACKAGE_PATH_Pinhead40=dist/Pinhead40/None-Linux/package/ledcube.tar
+CND_PACKAGE_PATH_Pinhead40=dist/Pinhead40/GNU-Linux/package/ledcube.tar
 # Pinhead26 configuration
 CND_PLATFORM_Pinhead26=Cygwin-Windows
 CND_ARTIFACT_DIR_Pinhead26=dist/Pinhead26/Cygwin-Windows

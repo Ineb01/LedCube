@@ -19,12 +19,12 @@
 #include <stdlib.h>
 #include <time.h>
 
-#ifdef PINHEAD26 
-#include "pinhead26.h"
-#endif
-
 #ifdef PINHEAD40 
 #include "pinhead40.h"
+#endif
+
+#ifdef PINHEAD26 
+#include "pinhead26.h"
 #endif
 
 #ifdef DEBUG
