@@ -33,6 +33,7 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
       <itemPath>Pattern.txt</itemPath>
+      <itemPath>Pattern_old.txt</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

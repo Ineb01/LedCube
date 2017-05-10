@@ -57,9 +57,24 @@ int main(int argc, char** argv) {
     pthread_t thread;
     pthread_create(&thread, NULL, THREAD, NULL);
 
-    FILE *fp = NULL;
-
     int i, j, k;
+
+    FILE *fp = NULL;
+    
+    while (1) {
+        fp = fopen("Pattern.txt", "rt");
+        if (fp != NULL) {
+            for (i = 0; i < LEDCUBESIDE; i++) {
+                for (j = 0; j < LEDCUBESIDE; j++) {
+                    for (k = 0; k < LEDCUBESIDE; k++) {
+                        fscanf(fp, "%d", &rgLedCube[i][j][k]);
+                    }
+                }
+            }
+            fclose(fp);
+        }
+    }
+    /*int i, j, k;
     signed char input = '0';
     int delay, probability, id;
     long int marker[3];
@@ -133,7 +148,7 @@ int main(int argc, char** argv) {
         } while (input != 'E');
 
         fclose(fp);
-    }
+    }*/
 
     return (EXIT_SUCCESS);
 }
