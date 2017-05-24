@@ -36,6 +36,12 @@
 #include "console.h"
 #endif
 
+// Marker is used for ....
+// Syntax M <x>
+//   x ....
+#define MARKER 'M'
+#define MAX_MARKER  3
+
 #ifdef LEDCUBE_H
 int rgLayerID[LEDCUBESIDE] = {LAYER0, LAYER1, LAYER2};
 int rgPillarID[LEDCUBESIDE][LEDCUBESIDE] = {PILLAR1, PILLAR2, PILLAR3,
@@ -57,12 +63,13 @@ int main(int argc, char** argv) {
     pthread_t thread;
     pthread_create(&thread, NULL, THREAD, NULL);
 
-    int i, j, k;
+    /*int i, j, k;
 
     FILE *fp = NULL;
     
     while (1) {
-        fp = fopen("Pattern.txt", "rt");
+        //fp = fopen("Pattern.txt", "rt");
+        fp = fopen("/var/www/html/ledcube/Pattern.txt", "rt");
         if (fp != NULL) {
             for (i = 0; i < LEDCUBESIDE; i++) {
                 for (j = 0; j < LEDCUBESIDE; j++) {
@@ -73,15 +80,18 @@ int main(int argc, char** argv) {
             }
             fclose(fp);
         }
-    }
-    /*int i, j, k;
+    }*/
+    int i, j, k;
     signed char input = '0';
     int delay, probability, id;
     long int marker[3];
     int count[3] = {0, 0, 0};
     int control[3] = {0, 0, 0};
+    
+    FILE *fp = NULL;
 
-    fp = fopen("Pattern.txt", "rt");
+    //fp = fopen("Pattern.txt", "rt");
+    fp = fopen("/var/www/html/ledcube/Pattern.txt", "rt");
 
     if (fp != NULL) {
         printf("\e[?25l");
@@ -91,7 +101,7 @@ int main(int argc, char** argv) {
             fscanf(fp, "%c", &input);
 
             switch (input) {
-                case 'M':
+                case MARKER:
                     fscanf(fp, "%d", &id);
                     marker[id] = ftell(fp);
                     break;
@@ -148,7 +158,7 @@ int main(int argc, char** argv) {
         } while (input != 'E');
 
         fclose(fp);
-    }*/
+    }
 
     return (EXIT_SUCCESS);
 }
