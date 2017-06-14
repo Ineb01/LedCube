@@ -57,7 +57,7 @@ int main(int argc, char** argv) {
 
     pthread_t thread;
     pthread_create(&thread, NULL, THREAD, NULL);
-
+    /*
     int i, j, k;
 
     FILE *fp = NULL;
@@ -75,8 +75,8 @@ int main(int argc, char** argv) {
             }
             fclose(fp);
         }
-    }
-    /*int i, j, k;
+    }*/
+    int i, j, k;
     signed char input = '0';
     int delay, probability, id;
     long int marker[MAX_MARKER];
@@ -89,10 +89,11 @@ int main(int argc, char** argv) {
     fp = fopen("/var/www/html/ledcube/Pattern.txt", "rt");
 
     if (fp != NULL) {
+        fclose(fp);
         printf("\e[?25l");
 
         do {
-
+            fp = fopen("/var/www/html/ledcube/Pattern.txt", "rt");
             fscanf(fp, "%c", &input);
 
             switch (input) {
@@ -149,11 +150,11 @@ int main(int argc, char** argv) {
                 default:
                     break;
             }
-
+            fclose(fp);
         } while (input != 'E');
 
-        fclose(fp);
+        
     }
-*/
+
     return (EXIT_SUCCESS);
 }

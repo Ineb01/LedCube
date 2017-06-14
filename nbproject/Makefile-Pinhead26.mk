@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-Linux
-CND_DLIB_EXT=so
+CND_PLATFORM=GNU-Windows
+CND_DLIB_EXT=dll
 CND_CONF=Pinhead26
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -59,9 +59,9 @@ LDLIBSOPTIONS=-lpthread -lwiringPi
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ledcube
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ledcube.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ledcube: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ledcube.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ledcube ${OBJECTFILES} ${LDLIBSOPTIONS}
 

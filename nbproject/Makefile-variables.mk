@@ -7,13 +7,13 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=GNU-Linux
-CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
+CND_PLATFORM_Debug=GNU-Windows
+CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Windows
 CND_ARTIFACT_NAME_Debug=ledcube
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/ledcube
-CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Windows/ledcube
+CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Windows/package
 CND_PACKAGE_NAME_Debug=ledcube.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/ledcube.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Windows/package/ledcube.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
@@ -31,13 +31,13 @@ CND_PACKAGE_DIR_Pinhead40=dist/Pinhead40/GNU-Linux/package
 CND_PACKAGE_NAME_Pinhead40=ledcube.tar
 CND_PACKAGE_PATH_Pinhead40=dist/Pinhead40/GNU-Linux/package/ledcube.tar
 # Pinhead26 configuration
-CND_PLATFORM_Pinhead26=GNU-Linux
-CND_ARTIFACT_DIR_Pinhead26=dist/Pinhead26/GNU-Linux
+CND_PLATFORM_Pinhead26=GNU-Windows
+CND_ARTIFACT_DIR_Pinhead26=dist/Pinhead26/GNU-Windows
 CND_ARTIFACT_NAME_Pinhead26=ledcube
-CND_ARTIFACT_PATH_Pinhead26=dist/Pinhead26/GNU-Linux/ledcube
-CND_PACKAGE_DIR_Pinhead26=dist/Pinhead26/GNU-Linux/package
+CND_ARTIFACT_PATH_Pinhead26=dist/Pinhead26/GNU-Windows/ledcube
+CND_PACKAGE_DIR_Pinhead26=dist/Pinhead26/GNU-Windows/package
 CND_PACKAGE_NAME_Pinhead26=ledcube.tar
-CND_PACKAGE_PATH_Pinhead26=dist/Pinhead26/GNU-Linux/package/ledcube.tar
+CND_PACKAGE_PATH_Pinhead26=dist/Pinhead26/GNU-Windows/package/ledcube.tar
 #
 # include compiler specific variables
 #
